@@ -2,7 +2,7 @@
   "name": "functions",
   "scripts": {
     "lint": "eslint --ext .js,.ts .",
-    "build": "tsc",
+    "build": "tsc && tsc-alias",
     "build:watch": "tsc --watch",
     "serve": "npm run build && firebase emulators:start --only functions",
     "shell": "npm run build && firebase functions:shell",
@@ -15,16 +15,23 @@
   },
   "main": "lib/index.js",
   "dependencies": {
+    "class-validator": "^0.14.1",
+    "express": "^4.19.2",
     "firebase-admin": "^12.1.0",
-    "firebase-functions": "^5.0.0"
+    "firebase-functions": "^5.0.0",
+    "inversify": "^6.0.2",
+    "reflect-metadata": "^0.2.2",
+    "source-map-support": "^0.5.21"
   },
   "devDependencies": {
+    "@types/express": "^4.17.21",
     "@typescript-eslint/eslint-plugin": "^5.12.0",
     "@typescript-eslint/parser": "^5.12.0",
     "eslint": "^8.9.0",
     "eslint-config-google": "^0.14.0",
     "eslint-plugin-import": "^2.25.4",
     "firebase-functions-test": "^3.1.0",
+    "tsc-alias": "^1.8.10",
     "typescript": "^4.9.0"
   },
   "private": true
