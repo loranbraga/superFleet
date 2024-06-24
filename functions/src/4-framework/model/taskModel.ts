@@ -1,6 +1,6 @@
 import {Collection} from "fireorm";
 
-@Collection()
+@Collection("tasks")
 export class TaskModel {
   id!: string;
   incrementId!: number;

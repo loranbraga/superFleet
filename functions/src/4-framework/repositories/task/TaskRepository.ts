@@ -1,7 +1,6 @@
 import {injectable} from "inversify";
 import {ITaskRepository} from "@business/repositories/task/iTaskRepository";
 import {ITaskEntity} from "@domain/entities/task/taskEntity";
-// import {getFirestore} from "firebase-admin/firestore";
 import {TaskModel} from "@framework/model/taskModel";
 import {getRepository} from "fireorm";
 
