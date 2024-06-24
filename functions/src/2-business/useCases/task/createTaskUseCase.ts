@@ -10,12 +10,13 @@ import {
   TaskScoreInvalid} from "@business/module/errors/task/task";
 import {TaskEntity} from "@domain/entities/task/taskEntity";
 import {ILoggerService, ILoggerServiceToken} from "@business/services/iLogger";
+import {ITaskRepository, ITaskRepositoryToken} from "@business/repositories/task/iTaskRepository";
 
 @injectable()
 export class CreateTaskUseCase implements IUseCase<InputCreateTaskDto, OutputCreateTaskDto> {
   public constructor(
     // @inject(IPartnerRepositoryToken) private readonly partnerRepository: IPartnerRepository,
-    // @inject(ICustomerRepositoryToken) private readonly customerRepository: ICustomerRepository,
+    @inject(ITaskRepositoryToken) private readonly taskRepository: ITaskRepository,
     @inject(ILoggerServiceToken) private readonly log: ILoggerService
   ) {}
 
@@ -35,7 +36,9 @@ export class CreateTaskUseCase implements IUseCase<InputCreateTaskDto, OutputCre
         return left(taskEntity.value);
       }
 
-      return right(taskEntity.value.export());
+      const createdTask = await this.taskRepository.create(taskEntity.value.export());
+
+      return right(createdTask);
     } catch (error) {
       this.log.error(error);
       return left(TaskCreationFailed);

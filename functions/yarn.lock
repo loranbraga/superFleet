@@ -801,6 +801,11 @@ chokidar@^3.5.3:
   optionalDependencies:
     fsevents "~2.3.2"
 
+class-transformer@0.4.0:
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/class-transformer/-/class-transformer-0.4.0.tgz#b52144117b423c516afb44cc1c76dbad31c2165b"
+  integrity sha512-ETWD/H2TbWbKEi7m9N4Km5+cw1hNcqJSxlSYhsLsNjQzWWiZIYA1zafxpK9PwVfaZ6AqR5rrjPVUBGESm5tQUA==
+
 class-validator@^0.14.1:
   version "0.14.1"
   resolved "https://registry.yarnpkg.com/class-validator/-/class-validator-0.14.1.tgz#ff2411ed8134e9d76acfeb14872884448be98110"
@@ -1469,6 +1474,15 @@ firebase-functions@^5.0.0:
     express "^4.17.1"
     protobufjs "^7.2.2"
 
+fireorm@^0.23.3:
+  version "0.23.3"
+  resolved "https://registry.yarnpkg.com/fireorm/-/fireorm-0.23.3.tgz#b32a303567f9220a40d73bbe7282848b4d62052b"
+  integrity sha512-HQB/WyHZp0Khoxp7AZFpwwbGznVMesuVuRl4QR74UEIN6UZkKUASOFdT+d0Pkif5W2oKQmVdd0mFsJiLxEuCJg==
+  dependencies:
+    class-transformer "0.4.0"
+    pluralize "^8.0.0"
+    ts-object-path "^0.1.2"
+
 flat-cache@^3.0.4:
   version "3.2.0"
   resolved "https://registry.yarnpkg.com/flat-cache/-/flat-cache-3.2.0.tgz#2c0c2d5040c99b1632771a9d105725c0115363ee"
@@ -1503,11 +1517,6 @@ forwarded@0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/forwarded/-/forwarded-0.2.0.tgz#2269936428aad4c15c7ebe9779a84bf0b2a81811"
   integrity sha512-buRG0fpBtRHSTCOASe6hD258tEubFoRLb4ZNA6NxMVHNw2gOcwHo9wyablzMzOA5z9xA9L1KNjk/Nt6MT9aYow==
-
-fp-ts@^2.16.6:
-  version "2.16.6"
-  resolved "https://registry.yarnpkg.com/fp-ts/-/fp-ts-2.16.6.tgz#9d63c5b2a06355d627ae94c37a5cffda5c455d24"
-  integrity sha512-v7w209VPj4L6pPn/ftFRJu31Oa8QagwcVw7BZmLCUWU4AQoc954rX9ogSIahDf67Pg+GjPbkW/Kn9XWnlWJG0g==
 
 fresh@0.5.2:
   version "0.5.2"
@@ -2469,6 +2478,11 @@ plimit-lit@^1.2.6:
   dependencies:
     queue-lit "^1.5.1"
 
+pluralize@^8.0.0:
+  version "8.0.0"
+  resolved "https://registry.yarnpkg.com/pluralize/-/pluralize-8.0.0.tgz#1a6fa16a38d12a1901e0320fa017051c539ce3b1"
+  integrity sha512-Nc3IT5yHzflTfbjgqWcCPpo7DaKy4FnpB0l/zCAW0Tc7jxAiuqSxHasntB3D7887LSrA93kDJ9IXovxJYxyLCA==
+
 possible-typed-array-names@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/possible-typed-array-names/-/possible-typed-array-names-1.0.0.tgz#89bb63c6fada2c3e90adc4a647beeeb39cc7bf8f"
@@ -2904,6 +2918,11 @@ ts-deepmerge@^2.0.1:
   version "2.0.7"
   resolved "https://registry.yarnpkg.com/ts-deepmerge/-/ts-deepmerge-2.0.7.tgz#36786a9a10b5f3a6f5154007cf17bfba7251e0a7"
   integrity sha512-3phiGcxPSSR47RBubQxPoZ+pqXsEsozLo4G4AlSrsMKTFg9TA3l+3he5BqpUi9wiuDbaHWXH/amlzQ49uEdXtg==
+
+ts-object-path@^0.1.2:
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/ts-object-path/-/ts-object-path-0.1.2.tgz#7bbfa50a9a3970bcdd7e67470d00fb54ca22a6c7"
+  integrity sha512-YLX9omkbe2spFv7DDo1fC5BiRfMtu/LgYuGSXnuIT5EkhedzCEShT7YrsQV3pjjT7doY2RHfoxJrra16KJlf7w==
 
 tsc-alias@^1.8.10:
   version "1.8.10"

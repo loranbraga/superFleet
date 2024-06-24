@@ -19,6 +19,7 @@
     "express": "^4.19.2",
     "firebase-admin": "^12.1.0",
     "firebase-functions": "^5.0.0",
+    "fireorm": "^0.23.3",
     "inversify": "^6.0.2",
     "reflect-metadata": "^0.2.2",
     "source-map-support": "^0.5.21"
