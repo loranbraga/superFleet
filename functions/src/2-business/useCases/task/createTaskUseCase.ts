@@ -15,7 +15,6 @@ import {ITaskRepository, ITaskRepositoryToken} from "@business/repositories/task
 @injectable()
 export class CreateTaskUseCase implements IUseCase<InputCreateTaskDto, OutputCreateTaskDto> {
   public constructor(
-    // @inject(IPartnerRepositoryToken) private readonly partnerRepository: IPartnerRepository,
     @inject(ITaskRepositoryToken) private readonly taskRepository: ITaskRepository,
     @inject(ILoggerServiceToken) private readonly log: ILoggerService
   ) {}

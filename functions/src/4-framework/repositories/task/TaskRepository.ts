@@ -14,6 +14,7 @@ export class TaskRepository implements ITaskRepository {
 
     return result;
   }
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   findById(incrementId: number): Promise<ITaskEntity> {
     throw new Error("Method not implemented.");
   }
