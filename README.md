@@ -17,6 +17,19 @@ Para executar o projeto, você precisará ter os seguintes requisitos instalados
 
 - Node 18 >=
 
+## Pre Instalação
+
+Siga os passos abaixo para configurar o ambiente firebase:
+
+1. Instale as ferramentas de desenvolvimento do firebase:
+    ```sh
+    yarn global add firebase firebase-tools 
+    ```
+2. Faça login no firebase:
+    ```sh
+    firebase login
+    ```
+
 ## Instalação
 
 Siga os passos abaixo para clonar e configurar o projeto:
