@@ -52,7 +52,7 @@ Para executar o projeto em ambiente de desenvolvimento, utilize os seguintes com
 Para rodar os testes, utilize o comando abaixo:
 
   ```sh
-    yarn serve
+    yarn teste
   ```
 
 ## Contribuição
