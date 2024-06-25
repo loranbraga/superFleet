@@ -1,5 +1,4 @@
 import {ContainerModule, interfaces} from "inversify";
-// interfaces
 import {ILoggerService, ILoggerServiceToken} from "@business/services/iLogger";
 import {ConsoleLogService} from "@framework/services/consoleLogService";
 

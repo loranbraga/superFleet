@@ -1,4 +1,3 @@
-// import {OutputCreateCustomerDto} from "@business/dto/customer/customerDto";
 import {OutputCreateTaskDto} from "@business/dto/taskDto";
 import {Validatable} from "@controller/serializers/abstractValidatable";
 import {IsNotEmpty, IsString, IsOptional, IsInt} from "class-validator";
